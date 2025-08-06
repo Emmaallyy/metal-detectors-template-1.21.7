@@ -1,0 +1,30 @@
+{
+  "diamondbeep": {
+    "subtitle": "Diamond Nearby!",
+    "sounds": [
+      {
+        "name": "metal-detectors:diamondbeep"
+
+
+      }
+    ]
+  },
+  "beep": {
+    "subtitle": "Ore Nearby!",
+    "sounds": [
+      {
+        "name": "metal-detectors:beep"
+
+
+      }
+    ]
+  },
+  "ancientdebrisbeep": {
+    "subtitle": "Ancient Debris Nearby!",
+    "sounds": [
+      {
+        "name": "metal-detectors:ancientdebrisbeep"
+    }
+    ]
+  }
+}

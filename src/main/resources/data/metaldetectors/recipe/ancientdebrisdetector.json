@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "metal-detectors:resonatingcore",
+    "S": "minecraft:stick",
+    "R": "minecraft:redstone",
+    "I": "minecraft:netherite_scrap",
+    "C": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    "CIC",
+    "C#C",
+    "RSR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "metal-detectors:ancientdebrisdetector"
+  }
+}

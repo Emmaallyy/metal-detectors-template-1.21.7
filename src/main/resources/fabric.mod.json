@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "metal-detectors",
+	"version": "${1.0}",
+	"name": "Metal Detectors",
+	"description": "A Mod to help mining feel less tedious!",
+	"authors": [
+		"Emmaly!"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@thisisemmalyshandle/",
+		"sources": "https://github.com/Emmaallyy/metal-detectors-template-1.21.7"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/metal-detectors/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.emmaly.metaldetectors.MetalDetectors"
+		],
+		"fabric-datagen": [
+			"net.emmaly.metaldetectors.MetalDetectorsDataGenerator"
+		],
+		"client": [
+			"net.emmaly.metaldetectors.MetalDetectorsClient"
+		]
+	},
+	"mixins": [
+		"metal-detectors.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.7",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
