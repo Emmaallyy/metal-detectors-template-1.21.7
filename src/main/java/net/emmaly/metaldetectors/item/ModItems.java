@@ -20,15 +20,14 @@ import java.util.function.Function;
 
 public class ModItems {
 
-    public static final Item RESONATINGCORE = registerItem("resonatingcore", setting -> new Item(setting));
-    public static final Item METAL_DETECTOR = registerItem("metaldetector", setting -> new MetalDetectorItem(setting.maxCount(1)));
-    public static final Item DIAMOND_DETECTOR = registerItem("diamonddetector", setting -> new DiamondDetectorItem(setting.maxCount(1)));
-    public static final Item ANCIENT_DEBRIS_DETECTOR = registerItem("ancientdebrisdetector", setting -> new AncientDebrisDetector(setting.maxCount(1)));
+    public static final Item RESONATINGCORE = registerItem("resonatingcore", new Item(new Item.Settings()));
+    public static final Item METAL_DETECTOR = registerItem("metaldetector", new MetalDetectorItem(new Item.Settings().maxCount(1)));
+    public static final Item DIAMOND_DETECTOR = registerItem("diamonddetector", new DiamondDetectorItem(new Item.Settings().maxCount(1)));
+    public static final Item ANCIENT_DEBRIS_DETECTOR = registerItem("ancientdebrisdetector", new AncientDebrisDetector(new Item.Settings().maxCount(1)));
 
 
-    private static Item registerItem(String name, Function<Item.Settings, Item> function) {
-        return Registry.register(Registries.ITEM, Identifier.of(MetalDetectors.MOD_ID, name),
-                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MetalDetectors.MOD_ID, name)))));
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, Identifier.of(MetalDetectors.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
@@ -44,3 +43,4 @@ public class ModItems {
         });
     }
 }
+

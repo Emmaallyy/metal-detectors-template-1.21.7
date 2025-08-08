@@ -2,9 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:diamond",
-    "minecraft:redstone",
-    "minecraft:amethyst_shard"
+    {
+      "item": "minecraft:diamond"
+
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
   ],
   "result": {
     "count": 1,

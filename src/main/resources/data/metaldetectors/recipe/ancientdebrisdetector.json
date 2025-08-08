@@ -2,11 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "metal-detectors:resonatingcore",
-    "S": "minecraft:stick",
-    "R": "minecraft:redstone",
-    "I": "minecraft:netherite_scrap",
-    "C": "minecraft:copper_ingot"
+    "#": {
+      "item": "metal-detectors:resonatingcore"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "C": {
+      "item": "minecraft:copper_ingot"
+    }
   },
   "pattern": [
     "CIC",
